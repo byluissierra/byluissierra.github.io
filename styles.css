@@ -165,7 +165,3 @@ a:focus-visible,button:focus-visible{outline:3px solid #40a4ff;outline-offset:3p
  #experiencia-detalle .role-responsibilities{margin:9px 22px 15px}
  #experiencia-detalle .role-tech-strip{margin:0 22px 25px}
 }
-
-/* Se elimina la numeración de las etapas profesionales. */
-#experiencia-detalle .role-header{gap:12px}
-#experiencia-detalle .role-header time{margin-left:0}
