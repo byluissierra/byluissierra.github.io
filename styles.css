@@ -77,3 +77,95 @@ a:focus-visible,button:focus-visible{outline:3px solid #40a4ff;outline-offset:3p
  .fact-card{padding:16px}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* Experiencia: clientes y responsabilidades detalladas */
+.job-client{font-size:11px;color:#49627f;margin:8px 0 5px;line-height:1.45}
+.role-client{margin:6px 0 10px;color:#435a76}
+.role-responsibilities{margin:8px 0 0;padding-left:20px;color:#40536b}
+.role-responsibilities li{margin:6px 0;line-height:1.55}
+.role-detail{height:auto}
+
+/* Tarjetas de experiencia redisenadas */
+.experience-premium{padding:75px 0 92px;background:linear-gradient(180deg,#e9f1fa 0%,#f7faff 54%,#edf3fb 100%)}
+.experience-premium .section-kicker{color:#1f7fd6}
+.experience-premium h2{font-size:clamp(28px,3vw,42px);letter-spacing:-.04em;margin:8px 0}
+.experience-premium>.container>p{max-width:750px;color:#526780;line-height:1.65}
+.experience-premium .role-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin-top:35px}
+.experience-premium .role-detail{position:relative;min-width:0;background:#fff;padding:26px 27px 24px;border:1px solid #d9e5f4;border-top:4px solid #3a9eff;border-radius:16px;box-shadow:0 12px 32px rgba(20,50,90,.075);transition:transform .2s ease,box-shadow .2s ease}
+.experience-premium .role-detail:hover{transform:translateY(-3px);box-shadow:0 18px 38px rgba(20,50,90,.13)}
+.experience-premium .role-detail-featured{border-top-color:#145de6;background:linear-gradient(140deg,#fff,#f2f8ff)}
+.experience-premium .role-header{display:flex;align-items:flex-start;gap:14px;padding-bottom:18px;border-bottom:1px solid #e4ebf4}
+.experience-premium .role-index{font-size:13px;font-weight:800;color:#2184e6;background:#e8f3ff;border-radius:10px;padding:9px 11px;line-height:1}
+.experience-premium .role-heading{flex:1;min-width:0}
+.experience-premium .role-heading h3{font-size:19px;margin:0 0 5px;color:#0f233e;line-height:1.2}
+.experience-premium .role-position{display:block;font-size:12px;font-weight:650;color:#2779ca;line-height:1.45}
+.experience-premium .role-header time{white-space:nowrap;background:#eaf0f8;padding:6px 9px;border-radius:20px;font-size:10px;color:#516785;font-weight:700}
+.experience-premium .role-client{background:#f0f6fd;border-radius:9px;padding:11px 13px;font-size:12px;margin:18px 0;color:#3d5674}
+.experience-premium .role-client strong{color:#185b99}
+.experience-premium .role-responsibilities{margin:15px 0 19px;padding-left:20px;color:#425571}
+.experience-premium .role-responsibilities li{line-height:1.6;margin:9px 0;font-size:13px;padding-left:2px}
+.experience-premium .role-responsibilities li::marker{color:#238cf1}
+.experience-premium .role-tech-strip{display:flex;flex-wrap:wrap;gap:7px;padding-top:16px;border-top:1px solid #e5ecf4}
+.experience-premium .role-chip{font-size:10px;color:#23639d;background:#eaf3ff;border:1px solid #d1e7fd;border-radius:20px;padding:5px 9px;font-weight:700}
+@media(max-width:1000px){.experience-premium .role-list{grid-template-columns:1fr}}
+@media(max-width:600px){.experience-premium{padding:48px 0 60px}.experience-premium .role-detail{padding:19px 17px}.experience-premium .role-header{flex-wrap:wrap}.experience-premium .role-header time{margin-left:46px}.experience-premium .role-heading h3{font-size:17px}}
+
+/* Certificaciones y estudios: misma jerarquía visual que Experiencia por etapas */
+.credentials-card{position:relative;overflow:hidden;padding:29px;border:1px solid #d8e5f4;box-shadow:0 9px 25px rgba(18,48,82,.06)}
+.credentials-card:before{content:"";position:absolute;top:0;left:0;right:0;height:5px;background:linear-gradient(90deg,#278eff,#56b7ff)}
+.credentials-head h2{font-size:24px;color:#0f233e;margin:5px 0 3px}
+.credentials-head p{font-size:13px;margin:0 0 22px;color:#5b6c83}
+.credentials-section-heading{display:flex;align-items:center;gap:11px;margin-bottom:12px}
+.credentials-section-heading h3{font-size:15px;color:#0f233e;margin:0}
+.credentials-symbol{padding:7px 9px;border-radius:9px;background:#e8f3ff;color:#2184e6;font-weight:800;font-size:12px}
+.credential-entry{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;background:#f4f8fd;border:1px solid #e3ebf5;border-radius:10px;padding:12px 13px;margin:9px 0}
+.credential-main{display:flex;flex-direction:column;gap:3px;min-width:0}
+.credential-main strong{font-size:13px;line-height:1.4;color:#163150}
+.credential-main span{font-size:12px;color:#5c718c}
+.credential-entry time,.credential-year{white-space:nowrap;font-size:11px;color:#206cba;background:#e1f0ff;border-radius:18px;padding:5px 9px;font-weight:750}
+.credential-year-pending{background:#eef1f6;color:#64748b}
+.credentials-divider{height:1px;background:linear-gradient(90deg,#aac9e8,#dce7f3);margin:23px 0}
+@media(max-width:540px){.credentials-card{padding:21px 16px}.credential-entry{flex-direction:column}.credential-entry time,.credential-year{align-self:flex-start}}
+
+
+/* Visual editorial: experiencia detallada, independiente de la cronología superior */
+#experiencia-detalle.experience-premium {
+  padding: 95px 0 105px;
+  background: radial-gradient(ellipse at 92% 5%, rgba(38,113,189,.20),transparent 32%), linear-gradient(155deg,#061523 0%,#0b2035 62%,#071320 100%);
+  color:#f3f8ff;
+}
+#experiencia-detalle .section-kicker{color:#57b7ff}
+#experiencia-detalle h2{color:#fff;max-width:780px;font-family:Georgia,'Times New Roman',serif;font-size:clamp(31px,3.8vw,52px);line-height:1.15;letter-spacing:-.8px;margin:9px 0 18px;font-weight:700}
+#experiencia-detalle > .container > p{color:#b6c9dc;max-width:800px;font-size:16px;line-height:1.7}
+#experiencia-detalle .role-list{display:grid;grid-template-columns:1fr;gap:23px;margin-top:42px}
+#experiencia-detalle .editorial-job{background:linear-gradient(115deg,#122b45,#0d2339);color:#f5f8fc;display:grid;grid-template-columns:minmax(245px,0.43fr) minmax(0,1fr);gap:0;position:relative;border:1px solid #34516d;border-radius:20px;padding:0;overflow:hidden;box-shadow:0 20px 48px rgba(0,0,0,.16);transition:transform .2s,border-color .2s}
+#experiencia-detalle .editorial-job:hover{transform:translateY(-3px);border-color:#4eaaff}
+#experiencia-detalle .editorial-job::before{content:attr(data-phase);position:absolute;top:17px;right:23px;color:#6f9dbf;font-size:10px;font-weight:800;letter-spacing:2px}
+#experiencia-detalle .role-header{grid-column:1;grid-row:1/5;display:flex;flex-direction:column;align-items:flex-start;gap:14px;padding:35px 30px 35px 34px;border-right:1px solid #34516d;border-bottom:0;background:linear-gradient(140deg,rgba(45,116,183,.24),rgba(8,29,50,.2))}
+#experiencia-detalle .role-index{background:transparent;color:#60bbff;font-family:Georgia,serif;font-size:44px;line-height:1;padding:0;border-radius:0;font-weight:400}
+#experiencia-detalle .role-heading h3{color:#fff;font-family:Georgia,'Times New Roman',serif;font-size:clamp(24px,2.5vw,32px);letter-spacing:-.4px;margin-bottom:9px}
+#experiencia-detalle .role-position{color:#82c7ff;font-size:14px;line-height:1.45}
+#experiencia-detalle .role-header time{background:#173e62;color:#d8e9f9;font-size:12px;padding:7px 12px;border-radius:8px;margin-top:6px}
+#experiencia-detalle .role-client{grid-column:2;margin:45px 35px 6px;color:#bad1e6;font-size:13px}
+#experiencia-detalle .role-client strong{color:#70bafa}
+#experiencia-detalle .responsibilities-label{grid-column:2;margin:5px 35px 0;color:#f8fbff;font-size:12px;text-transform:uppercase;letter-spacing:1.5px}
+#experiencia-detalle .role-responsibilities{grid-column:2;margin:8px 35px 18px;padding-left:19px;color:#d5e0eb;font-size:14px;line-height:1.65}
+#experiencia-detalle .role-responsibilities li{margin:7px 0}
+#experiencia-detalle .role-responsibilities li::marker{color:#52b1fd}
+#experiencia-detalle .role-tech-strip{grid-column:2;margin:0 35px 28px;padding:18px 0 0;border-top:1px solid #2c4863;display:flex;flex-wrap:wrap;gap:7px}
+#experiencia-detalle .role-chip{background:#203e5c;color:#d9edff;border:1px solid #366389;border-radius:7px;padding:6px 10px;font-size:11px}
+@media(max-width:760px){
+ #experiencia-detalle.experience-premium{padding:58px 0 70px}
+ #experiencia-detalle .editorial-job{display:flex;flex-direction:column}
+ #experiencia-detalle .editorial-job::before{top:22px;right:16px;font-size:8px;letter-spacing:1px}
+ #experiencia-detalle .role-header{padding:27px 22px 22px;border-right:0;border-bottom:1px solid #34516d;gap:9px}
+ #experiencia-detalle .role-index{font-size:34px}
+ #experiencia-detalle .role-client{margin:20px 22px 6px}
+ #experiencia-detalle .responsibilities-label{margin:8px 22px 0}
+ #experiencia-detalle .role-responsibilities{margin:9px 22px 15px}
+ #experiencia-detalle .role-tech-strip{margin:0 22px 25px}
+}
+
+/* Se elimina la numeración de las etapas profesionales. */
+#experiencia-detalle .role-header{gap:12px}
+#experiencia-detalle .role-header time{margin-left:0}
