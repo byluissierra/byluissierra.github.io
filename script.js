@@ -1,6 +1,6 @@
 // Datos de la web: modificar aquí es más sencillo que repetir tarjetas HTML.
 const technologies = [
-  ['AWS','Cloud','https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg',null],['OpenShift','Kubernetes','redhatopenshift','EE0000'],
+  ['AWS','Cloud','assets/tech/aws.svg',null],['OpenShift','Kubernetes','redhatopenshift','EE0000'],
   ['GitLab','SCM & CI/CD','gitlab','FC6D26'],['Jenkins','CI/CD','jenkins','D24939'],
   ['Nexus','Artefactos','sonatype','6C45A5'],['ArgoCD','GitOps','argo','EF7B4D'],
   ['RHEL / Linux','Infraestructura','redhat','EE0000'],['WebLogic','Middleware','assets/tech/weblogic.png',null],
@@ -22,7 +22,7 @@ const jobs = [
 // Imágenes externas solo para marcas con identificador disponible. Algunos productos
 // empresariales no disponen de SVG público estable y utilizan distintivo de texto.
 const stackIcons = {
- 'AWS':'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg',
+ 'AWS':'assets/tech/aws.svg',
  'OpenShift':'https://cdn.simpleicons.org/redhatopenshift/EE0000',
  'GitLab':'https://cdn.simpleicons.org/gitlab/FC6D26',
  'Jenkins':'https://cdn.simpleicons.org/jenkins/D24939',
