@@ -4,7 +4,7 @@ const technologies = [
   ['GitLab','SCM & CI/CD','gitlab','FC6D26'],['Jenkins','CI/CD','jenkins','D24939'],
   ['Nexus','Artefactos','sonatype','6C45A5'],['ArgoCD','GitOps','argo','EF7B4D'],
   ['RHEL / Linux','Infraestructura','redhat','EE0000'],['WebLogic','Middleware','assets/tech/weblogic.png',null],
-  ['JBoss','Middleware','https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redhat/redhat-original.svg',null],['Grafana','Monitorización','grafana','F46800'],
+  ['JBoss','Middleware','https://commons.wikimedia.org/wiki/Special:FilePath/JBoss_logo.svg',null],['Grafana','Monitorización','grafana','F46800'],
   ['Prometheus','Monitorización','prometheus','E6522C'],['Ceph','Almacenamiento','ceph','EF5C55']
 ];
 // Tecnologías seleccionadas por puesto, basadas en el CV profesional.
@@ -32,7 +32,7 @@ const stackIcons = {
  'RHEL':'https://cdn.simpleicons.org/redhat/EE0000',
  'Grafana':'https://cdn.simpleicons.org/grafana/F46800',
  'WebLogic':'assets/tech/weblogic.png',
- 'JBoss':'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redhat/redhat-original.svg',
+ 'JBoss':'https://commons.wikimedia.org/wiki/Special:FilePath/JBoss_logo.svg',
  'Apache':'https://cdn.simpleicons.org/apache/D22128',
  'Tomcat':'https://cdn.simpleicons.org/apachetomcat/F8DC75',
  'PostgreSQL':'https://cdn.simpleicons.org/postgresql/4169E1',
